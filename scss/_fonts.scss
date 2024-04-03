@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?39tycs');
+    src:  url('../fonts/icomoon.eot?39tycs#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?39tycs') format('truetype'),
+      url('../fonts/icomoon.woff?39tycs') format('woff'),
+      url('../fonts/icomoon.svg?39tycs#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-down-pagi:before {
+    content: "\e911";
+  }
+  .icon-filter1:before {
+    content: "\e912";
+  }
+  .icon-left-pagi:before {
+    content: "\e913";
+    color: #fff;
+  }
+  .icon-pagi:before {
+    content: "\e914";
+    color: #fff;
+  }
+  .icon-eye:before {
+    content: "\e90b";
+    color: #fff;
+  }
+  .icon-filter:before {
+    content: "\e90c";
+  }
+  .icon-share:before {
+    content: "\e90d";
+    color: #fff;
+  }
+  .icon-table-edit:before {
+    content: "\e90e";
+    color: #fff;
+  }
+  .icon-user-in:before {
+    content: "\e90f";
+    color: #fff;
+  }
+  .icon-user-out:before {
+    content: "\e910";
+    color: #fff;
+  }
+  .icon-booking:before {
+    content: "\e900";
+    color: #9698ab;
+  }
+  .icon-chat-sms-svgrepo-com:before {
+    content: "\e901";
+    color: #3372df;
+  }
+  .icon-edit:before {
+    content: "\e902";
+    color: #fff;
+  }
+  .icon-Icons-Search:before {
+    content: "\e903";
+    color: #5e6c84;
+  }
+  .icon-info:before {
+    content: "\e904";
+  }
+  .icon-log-out:before {
+    content: "\e905";
+    color: #9698ab;
+  }
+  .icon-Path-2091:before {
+    content: "\e906";
+    color: #f2a544;
+  }
+  .icon-phone-call:before {
+    content: "\e907";
+    color: #e83e3e;
+  }
+  .icon-to-do-list:before {
+    content: "\e908";
+    color: #9698ab;
+  }
+  .icon-whatsapp:before {
+    content: "\e909";
+    color: #4dcf7c;
+  }
+  .icon-writing:before {
+    content: "\e90a";
+    color: #fff;
+  }
+  

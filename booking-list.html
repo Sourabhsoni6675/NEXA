@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>Nexa</title>
+      <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+   </head>
+   <body class="dashboard-body">
+      <header>
+        <nav class="navbar bg-body-tertiary dash-nav">
+            <div class="container-fluid conatiner-nav">
+              <a class="navbar-brand"><img class="w-60" src="images/nexa-vector-logo.png" alt=""></a>
+              <form class="d-flex" role="search">
+                <div class="input-icon-search">
+                    <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                    <span class="icon-Icons-Search"></span>
+                </div>
+              </form>
+              <div class="right-side-nav">
+                    <figure class="admin-img"><img src="images/acc.jpg" alt=""></figure>
+                    <h6>Bradley Robin</h6>
+                    <a href="login.html"><span class="icon-log-out icon-logout"></span></a>
+              </div>
+            </div>
+          </nav>
+      </header>
+      <main>
+        <div class="d-flex">
+            <aside class="aside">
+                <div class="left-side-menu">
+                    <ul>
+                        <li class="active"><a href=""><span class="icon-to-do-list"></span> <h6>Booking </h6></a></li>
+                        <li><a href=""><span class="icon-booking"></span><h6>Feedback Customer Calls</h6></a></li>
+                        <li><a href=""><span class="icon-booking"></span><h6>Vehicle Deliveries</h6></a></li>
+                        <li><a href=""><span class="icon-booking"></span><h6>Queries</h6></a></li>
+                        <li><a href=""><span class="icon-booking"></span><h6>Customer Type</h6></a></li>
+                        <li><a href=""><span class="icon-booking"></span><h6>Amendment Cancellation</h6></a></li>
+                    </ul>
+                </div>
+                <button id="toggle-btnn"  class="btn toggle-btn-aside"><img src="images/svg-icon/left-right-btn.svg" alt=""></button>
+            </aside>
+            <div class="right-side-sec">
+
+              <div class="main-full">
+                
+                <div class="d-flex booking-head booking-list-head"> 
+                    <p>Booking List <span class="icon-down-pagi"></span></p>
+                    <div class="d-flex ms-auto align-items-center">
+                        <div class="booking-search-input">
+                            <input class="form-control me-2" type="search" placeholder="Phone, Booking ID, Sales Executive" aria-label="Search">
+                            <span class="icon-Icons-Search"></span>
+                        </div>
+                        <span id="filter" class="filter-span"><span class="icon-filter1"></span>
+                            <div class="filter-div">
+                                <div class="">
+                                    <p>Additional Filter</p>
+                                    <button></button>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+                <ul class="nav nav-tabs booking-list-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="total-booking" data-bs-toggle="tab" data-bs-target="#total-booking-pane" type="button" role="tab" aria-controls="total-booking-pane" aria-selected="true">Total Booking</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="vehicle-tab" data-bs-toggle="tab" data-bs-target="#vehicle-tab-pane" type="button" role="tab" aria-controls="vehicle-tab-pane" aria-selected="false">Vehicle Deliveries</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pbf-tab" data-bs-toggle="tab" data-bs-target="#pbf-tab-pane" type="button" role="tab" aria-controls="pbf-tab-pane" aria-selected="false">PBF</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="psf-tab" data-bs-toggle="tab" data-bs-target="#psf-tab-pane" type="button" role="tab" aria-controls="psf-tab-pane" aria-selected="false">PSF</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="queries-tab" data-bs-toggle="tab" data-bs-target="#queries-tab-pane" type="button" role="tab" aria-controls="queries-tab-pane" aria-selected="false">Queries</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="allied-tab" data-bs-toggle="tab" data-bs-target="#allied-tab-pane" type="button" role="tab" aria-controls="allied-tab-pane" aria-selected="false">Allied Services</button>
+                    </li>
+                  
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="total-booking-pane" role="tabpanel" aria-labelledby="total-booking" tabindex="0">
+
+                        <div class="main-box-right-side p-0">
+                            <div class="p-0">
+                                <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                    <div class="bg-black-comman-div">
+                                      <div class="four-btn">
+                                          <button class="same-massage">Online Booking</button>
+                                          <button class="same-massage">Cancelled Booking</button>
+                                          <button class="same-massage">Pending Booking</button>
+                                        </div>
+                                    </div>
+                                    <div class="same-table request-table bookin-list-table">
+                                      <div class="table-box table-responsive">
+                                        
+                                        <table id="table1" class="table table-striped">
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th>RE98731</th>
+                                              <td>16 Dec 2023</td>
+                                              <td>Amit Patel</td>
+                                              <td>Swift</td>
+                                              <td>VXi</td>
+                                              <td>Solid Fire Red</td>
+                                              <td>INR. 10,15,000/- </td>
+                                              <td>INR. 50,000/-</td>
+                                              <td>05 Jan 2024</td>
+                                              <td>Satish Kumar</td>
+                                              <td>01</td>
+                                            </tr>
+                                           
+                                            <tr>
+                                                <th>RE98731</th>
+                                                <td>16 Dec 2023</td>
+                                                <td>Amit Patel</td>
+                                                <td>Swift</td>
+                                                <td>VXi</td>
+                                                <td>Solid Fire Red</td>
+                                                <td>INR. 10,15,000/- </td>
+                                                <td>INR. 50,000/-</td>
+                                                <td>05 Jan 2024</td>
+                                                <td>Satish Kumar</td>
+                                                <td>01</td>
+                                              </tr>
+        
+                                              <tr>
+                                                <th>RE98731</th>
+                                                <td>16 Dec 2023</td>
+                                                <td>Amit Patel</td>
+                                                <td>Swift</td>
+                                                <td>VXi</td>
+                                                <td>Solid Fire Red</td>
+                                                <td>INR. 10,15,000/- </td>
+                                                <td>INR. 50,000/-</td>
+                                                <td>05 Jan 2024</td>
+                                                <td>Satish Kumar</td>
+                                                <td>01</td>
+                                              </tr>
+        
+                                              <tr>
+                                                <th>RE98731</th>
+                                                <td>16 Dec 2023</td>
+                                                <td>Amit Patel</td>
+                                                <td>Swift</td>
+                                                <td>VXi</td>
+                                                <td>Solid Fire Red</td>
+                                                <td>INR. 10,15,000/- </td>
+                                                <td>INR. 50,000/-</td>
+                                                <td>05 Jan 2024</td>
+                                                <td>Satish Kumar</td>
+                                                <td>01</td>
+                                              </tr>
+                                           
+                                          </tbody>
+                                        </table>
+            
+            
+                                      </div>
+                                    </div>
+                                </div>
+        
+                              </div>
+                          </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="pbf-tab-pane" role="tabpanel" aria-labelledby="pbf-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="psf-tab-pane" role="tabpanel" aria-labelledby="psf-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="queries-tab-pane" role="tabpanel" aria-labelledby="queries-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="allied-tab-pane" role="tabpanel" aria-labelledby="allied-tab" tabindex="0">...</div>
+                    
+                  </div>
+
+
+                <div class="pagi-div">
+                    <p>Showing 1 - 10 of 2050 records</p>
+                    <div class="next-page-div">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link leftpage" href="#" aria-label="Previous">
+                                   <span class="icon-pagi" aria-hidden="true"></span>
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link leftpage" href="#" aria-label="Previous">
+                                    <span class="icon-left-pagi" aria-hidden="true"></span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item">
+                                <a class="page-link leftpage right-page" href="#" aria-label="Next">
+                                    <span class="icon-left-pagi" aria-hidden="true"></span>
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                <a class="page-link leftpage right-page" href="#" aria-label="Next">
+                                    <span class="icon-pagi" aria-hidden="true"></span>
+                                </a>
+                              </li>
+                              <li class="page-item">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>10</option>
+                                    <option value="1">200</option>
+                                    <option value="2">300</option>
+                                    <option value="3">400</option>
+                                  </select>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                </div>
+
+              </div>
+              
+            </div>
+        </div>
+
+        
+      </main>
+      <!-- Booking Cancellation Request Modal -->  
+        <!-- Modal -->
+        <div class="modal fade cancel-request-modal" id="cancellationRequestModal" tabindex="-1" aria-labelledby="cancellationRequestModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="cancellationRequestLabel">Booking Cancellation Request</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="inner-content">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Message</label>
+                      <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="" class="form-label">CRE Remarks </label>
+                      <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Send for approval to Team Leader</label>
+                    </div>
+                  </div>
+                  <div class="modal-footer-btn">
+                    <button type="button" class="btn btn-primary view-btn rounded-0 px-5 me-3" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary view-btn rounded-0 px-5" data-bs-toggle="modal" data-bs-target="#cancelbookingModal">Yes</button>
+                  </div>
+                </div>
+                
+              </form>
+            </div>
+            </div>
+        </div>
+
+        <!-- Booking Update Request Modal -->  
+        <!-- Modal -->
+        <div class="modal fade cancel-request-modal" id="updateRequestModal" tabindex="-1" aria-labelledby="updateRequestModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <form action="">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="updateRequestLabel">Booking Update Request</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="inner-content">
+                  <div class="mb-3">
+                    <label for="" class="form-label">CRE Remarks</label>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="" class="form-label">Update Remarks </label>
+                    <textarea class="form-control" placeholder="" id="floatingTextarea"></textarea>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                    <label class="form-check-label" for="exampleCheck2">Send for approval to Team Leader</label>
+                  </div>
+                </div>
+                <div class="modal-footer-btn">
+                  <button type="button" class="btn btn-primary view-btn rounded-0 px-5 me-3" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-primary view-btn rounded-0 px-5">Save</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+          </div>
+        </div>
+
+         <!-- View Details Modal -->  
+        <!-- Modal -->
+        <div class="modal fade cancel-request-modal view-modal" id="viewModal" tabindex="-1" aria-labelledby="viewModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <form action="">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="viewLabel">View Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="inner-content">
+                  <div class="row">
+                    <div class="col-lg-6">
+                      <div class="data-text">
+                        <div class="data-details">
+                          <p>Cancellation Request Id </p>
+                          <span>:</span>
+                          <h6>EQXXXXX XXXXX</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>Request Confirmed On </p>
+                          <span>:</span>
+                          <h6>Jan 05, 2024</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>Request Rejected On </p>
+                          <span>:</span>
+                          <h6>Jan 08, 2024</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>Refund Initiated </p>
+                          <span>:</span>
+                          <h6>--</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="data-text">
+                        <div class="data-details">
+                          <p>Cancellation Request On </p>
+                          <span>:</span>
+                          <h6>Jan 03, 2024</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>Request Approved On </p>
+                          <span>:</span>
+                          <h6>Jan 06, 2024</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>Request Completed On </p>
+                          <span>:</span>
+                          <h6>Jan 10, 2024</h6>
+                        </div>
+                        <div class="data-details">
+                          <p>CRE Remarks</p>
+                          <span>:</span>
+                          <h6>Customer cancel request</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer-btn mt-4">
+                  <button type="button" class="btn btn-primary view-btn rounded-0 px-5" data-bs-dismiss="modal">Cancel</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+          </div>
+        </div>
+     
+         <!-- Booking Cancellation Modal -->  
+        <!-- Modal -->
+        <div class="modal fade cancel-request-modal cancel-modal" id="cancelbookingModal" tabindex="-1" aria-labelledby="cancelbookingModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <form action="">
+              <div class="modal-header">
+              <h1 class="modal-title fs-5" id="cancelbookingLabel">View Details</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="inner-content">
+                  <div class="row">
+                    <div class="col-lg-3">
+                        <figure class="text-center"><img class="w-50" src="images/email-svgrepo.png" alt=""></figure>
+                    </div>
+                    <div class="col-lg-9">
+                        <p>You Request Id - XXXXX has been marked as done
+                          and your Booking Id - XXXXXXX has been cancelled.
+                          A notification for the same will be sent to the 
+                          customer on +91-XXXXXXXXXXXX.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer-btn mt-4">
+                  <button type="button" class="btn btn-primary view-btn rounded-0 px-5" data-bs-dismiss="modal">Ok</button>
+                </div>
+              </div>
+             
+            </form>
+          </div>
+          </div>
+        </div>
+     
+    
+      <!-- Scripts -->
+      <script src="js/jquery.min.js "></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/owl.carousel.min.js "></script>
+      <script src="js/custom.js "></script>
+   </body>
+</html>
