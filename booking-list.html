@@ -55,14 +55,94 @@
                             <input class="form-control me-2" type="search" placeholder="Phone, Booking ID, Sales Executive" aria-label="Search">
                             <span class="icon-Icons-Search"></span>
                         </div>
-                        <span id="filter" class="filter-span"><span class="icon-filter1"></span>
-                            <div class="filter-div">
-                                <div class="">
-                                    <p>Additional Filter</p>
-                                    <button></button>
+                        <span class="main-filter-box">
+                          <span id="filter" class="filter-span"><span class="icon-filter1"></span></span>
+                          <div class="filter-div">
+                            <button class="close-btn"></button>
+                              <div class="top-head-filter">
+                                  <p>Additional Filter</p>
+                                  <span>Clear</span>
+                              </div>
+
+                              <div class="filter-accordion-main">
+                                <div class="accordion" id="accordionExample">
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Zone
+                                      </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <select class="form-select select-zone" aria-label="Default select example">
+                                          <option selected>Select Zone</option>
+                                          <option value="1">Zone 1</option>
+                                          <option value="2">Zone 2</option>
+                                          <option value="3">Zone 3</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Region
+                                      </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Dealership Name
+                                      </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Dealership Name
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                  <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Dealership Name
+                                      </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                      <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                      </div>
+                                    </div>
+                                  </div>
+
                                 </div>
-                            </div>
+                              </div>
+                          </div>
                         </span>
+                        
                     </div>
                 </div>
                 <ul class="nav nav-tabs booking-list-tabs" id="myTab" role="tablist">
@@ -112,6 +192,7 @@
                                               <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
                                               <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
                                               <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                              <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
                                               <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
                                               <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
                                               <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
@@ -127,6 +208,7 @@
                                               <td>VXi</td>
                                               <td>Solid Fire Red</td>
                                               <td>INR. 10,15,000/- </td>
+                                              <td><span class="list-status-span">Booking Completed</span></td>
                                               <td>INR. 50,000/-</td>
                                               <td>05 Jan 2024</td>
                                               <td>Satish Kumar</td>
@@ -141,6 +223,7 @@
                                                 <td>VXi</td>
                                                 <td>Solid Fire Red</td>
                                                 <td>INR. 10,15,000/- </td>
+                                                <td><span class="list-status-span blue">Document Signed</span></td>
                                                 <td>INR. 50,000/-</td>
                                                 <td>05 Jan 2024</td>
                                                 <td>Satish Kumar</td>
@@ -155,6 +238,7 @@
                                                 <td>VXi</td>
                                                 <td>Solid Fire Red</td>
                                                 <td>INR. 10,15,000/- </td>
+                                                <td><span class="list-status-span green">Vehicle Allotted</span></td>
                                                 <td>INR. 50,000/-</td>
                                                 <td>05 Jan 2024</td>
                                                 <td>Satish Kumar</td>
@@ -169,6 +253,37 @@
                                                 <td>VXi</td>
                                                 <td>Solid Fire Red</td>
                                                 <td>INR. 10,15,000/- </td>
+                                                <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                                <td>INR. 50,000/-</td>
+                                                <td>05 Jan 2024</td>
+                                                <td>Satish Kumar</td>
+                                                <td>01</td>
+                                              </tr>
+
+                                              <tr>
+                                                <th>RE98731</th>
+                                                <td>16 Dec 2023</td>
+                                                <td>Amit Patel</td>
+                                                <td>Swift</td>
+                                                <td>VXi</td>
+                                                <td>Solid Fire Red</td>
+                                                <td>INR. 10,15,000/- </td>
+                                                <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                                <td>INR. 50,000/-</td>
+                                                <td>05 Jan 2024</td>
+                                                <td>Satish Kumar</td>
+                                                <td>01</td>
+                                              </tr>
+
+                                              <tr>
+                                                <th>RE98731</th>
+                                                <td>16 Dec 2023</td>
+                                                <td>Amit Patel</td>
+                                                <td>Swift</td>
+                                                <td>VXi</td>
+                                                <td>Solid Fire Red</td>
+                                                <td>INR. 10,15,000/- </td>
+                                                <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
                                                 <td>INR. 50,000/-</td>
                                                 <td>05 Jan 2024</td>
                                                 <td>Satish Kumar</td>
@@ -184,22 +299,737 @@
                                 </div>
         
                               </div>
-                          </div>
+                        </div>
 
 
                     </div>
-                    <div class="tab-pane fade" id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="pbf-tab-pane" role="tabpanel" aria-labelledby="pbf-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="psf-tab-pane" role="tabpanel" aria-labelledby="psf-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="queries-tab-pane" role="tabpanel" aria-labelledby="queries-tab" tabindex="0">...</div>
-                    <div class="tab-pane fade" id="allied-tab-pane" role="tabpanel" aria-labelledby="allied-tab" tabindex="0">...</div>
+                    <div class="tab-pane fade" id="vehicle-tab-pane" role="tabpanel" aria-labelledby="vehicle-tab" tabindex="0">
+
+                      <div class="main-box-right-side p-0">
+                        <div class="p-0">
+                            <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                <div class="bg-black-comman-div">
+                                  <div class="four-btn">
+                                      <button class="same-massage">Payment Pending</button>
+                                      <button class="same-massage">Today's Vehicle Deliveries</button>
+                                      <button class="same-massage">Next 7 days Vehicle Deliveries</button>
+                                      <button class="same-massage">New Car Delivery Invitation</button>
+                                      <button class="same-massage">Document Pending</button>
+                                    </div>
+                                </div>
+                                <div class="same-table request-table bookin-list-table">
+                                  <div class="table-box table-responsive">
+                                    
+                                    <table id="table1" class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>RE98731</th>
+                                          <td>16 Dec 2023</td>
+                                          <td>Amit Patel</td>
+                                          <td>Swift</td>
+                                          <td>VXi</td>
+                                          <td>Solid Fire Red</td>
+                                          <td>INR. 10,15,000/- </td>
+                                          <td><span class="list-status-span">Booking Completed</span></td>
+                                          <td>INR. 50,000/-</td>
+                                          <td>05 Jan 2024</td>
+                                          <td>Satish Kumar</td>
+                                          <td>01</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span blue">Document Signed</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span green">Vehicle Allotted</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+                                       
+                                      </tbody>
+                                    </table>
+        
+        
+                                  </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                    </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="pbf-tab-pane" role="tabpanel" aria-labelledby="pbf-tab" tabindex="0">
+
+                      <div class="main-box-right-side p-0">
+                        <div class="p-0">
+                            <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                <div class="bg-black-comman-div">
+                                  <div class="four-btn">
+                                      <button class="same-massage">PBF (24 hr)</button>
+                                      <button class="same-massage">Pending PBF</button>
+                                      <button class="same-massage">Completed PBF</button>
+                                    </div>
+                                </div>
+                                <div class="same-table request-table bookin-list-table">
+                                  <div class="table-box table-responsive">
+                                    
+                                    <table id="table1" class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>RE98731</th>
+                                          <td>16 Dec 2023</td>
+                                          <td>Amit Patel</td>
+                                          <td>Swift</td>
+                                          <td>VXi</td>
+                                          <td>Solid Fire Red</td>
+                                          <td>INR. 10,15,000/- </td>
+                                          <td><span class="list-status-span">Booking Completed</span></td>
+                                          <td>INR. 50,000/-</td>
+                                          <td>05 Jan 2024</td>
+                                          <td>Satish Kumar</td>
+                                          <td>01</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span blue">Document Signed</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span green">Vehicle Allotted</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+                                       
+                                      </tbody>
+                                    </table>
+        
+        
+                                  </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                    </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="psf-tab-pane" role="tabpanel" aria-labelledby="psf-tab" tabindex="0">
+
+                      <div class="main-box-right-side p-0">
+                        <div class="p-0">
+                            <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                <div class="bg-black-comman-div">
+                                  <div class="four-btn">
+                                      <button class="same-massage">PBF (24 hr)</button>
+                                      <button class="same-massage">PSF (15 Days)</button>
+                                      <button class="same-massage">Pending PSF</button>
+                                      <button class="same-massage">Completed PSF</button>
+                                    </div>
+                                </div>
+                                <div class="same-table request-table bookin-list-table">
+                                  <div class="table-box table-responsive">
+                                    
+                                    <table id="table1" class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>RE98731</th>
+                                          <td>16 Dec 2023</td>
+                                          <td>Amit Patel</td>
+                                          <td>Swift</td>
+                                          <td>VXi</td>
+                                          <td>Solid Fire Red</td>
+                                          <td>INR. 10,15,000/- </td>
+                                          <td><span class="list-status-span">Booking Completed</span></td>
+                                          <td>INR. 50,000/-</td>
+                                          <td>05 Jan 2024</td>
+                                          <td>Satish Kumar</td>
+                                          <td>01</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span blue">Document Signed</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span green">Vehicle Allotted</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+                                       
+                                      </tbody>
+                                    </table>
+        
+        
+                                  </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                    </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="queries-tab-pane" role="tabpanel" aria-labelledby="queries-tab" tabindex="0">
+
+
+                      <div class="main-box-right-side p-0">
+                        <div class="p-0">
+                            <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                <div class="bg-black-comman-div">
+                                  <div class="four-btn">
+                                      <button class="same-massage">Open Queries</button>
+                                      <button class="same-massage">Closed Queries</button>
+                                    </div>
+                                </div>
+                                <div class="same-table request-table bookin-list-table">
+                                  <div class="table-box table-responsive">
+                                    
+                                    <table id="table1" class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>RE98731</th>
+                                          <td>16 Dec 2023</td>
+                                          <td>Amit Patel</td>
+                                          <td>Swift</td>
+                                          <td>VXi</td>
+                                          <td>Solid Fire Red</td>
+                                          <td>INR. 10,15,000/- </td>
+                                          <td><span class="list-status-span">Booking Completed</span></td>
+                                          <td>INR. 50,000/-</td>
+                                          <td>05 Jan 2024</td>
+                                          <td>Satish Kumar</td>
+                                          <td>01</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span blue">Document Signed</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span green">Vehicle Allotted</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+                                       
+                                      </tbody>
+                                    </table>
+        
+        
+                                  </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                    </div>
+
+
+                    </div>
+                    <div class="tab-pane fade" id="allied-tab-pane" role="tabpanel" aria-labelledby="allied-tab" tabindex="0">
+
+                      <div class="main-box-right-side p-0">
+                        <div class="p-0">
+                            <div class="booking-cancellation-main interaction-table booking-list-first-tabs">
+                                <div class="bg-black-comman-div">
+                                  <div class="four-btn">
+                                      <button class="same-massage">MSGA Not Selected</button>
+                                      <button class="same-massage">MSGA Selected</button>
+                                      <button class="same-massage">EW Not Selected</button>
+                                      <button class="same-massage">EW Selected</button>
+                                      <button class="same-massage">MCP Not Selected</button>
+                                      <button class="same-massage">MCP Selected</button>
+                                      <button class="same-massage">CCP Not Selected</button>
+                                      <button class="same-massage">CCP Selected</button>
+                                    </div>
+                                </div>
+                                <div class="same-table request-table bookin-list-table">
+                                  <div class="table-box table-responsive">
+                                    
+                                    <table id="table1" class="table table-striped">
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">Booking ID <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Customer Name <span><img src="images/svg-icon/table-down-up.svg" alt=""></span> <span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Model <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Variant <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Colour <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">On Road Price <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Status <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Booking Amount <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Delivery Date <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Sale Executive <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                          <th scope="col">Active Queries <span><img src="images/svg-icon/table-down-up.svg" alt=""></span><span class="icon-filter f-10"></span></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th>RE98731</th>
+                                          <td>16 Dec 2023</td>
+                                          <td>Amit Patel</td>
+                                          <td>Swift</td>
+                                          <td>VXi</td>
+                                          <td>Solid Fire Red</td>
+                                          <td>INR. 10,15,000/- </td>
+                                          <td><span class="list-status-span">Booking Completed</span></td>
+                                          <td>INR. 50,000/-</td>
+                                          <td>05 Jan 2024</td>
+                                          <td>Satish Kumar</td>
+                                          <td>01</td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span blue">Document Signed</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span green">Vehicle Allotted</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+    
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-yellow">Vehicle Invoiced</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span red">Vehicle Delivered</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+
+                                          <tr>
+                                            <th>RE98731</th>
+                                            <td>16 Dec 2023</td>
+                                            <td>Amit Patel</td>
+                                            <td>Swift</td>
+                                            <td>VXi</td>
+                                            <td>Solid Fire Red</td>
+                                            <td>INR. 10,15,000/- </td>
+                                            <td><span class="list-status-span light-black">Vehicle Ready for Delivery</span></td>
+                                            <td>INR. 50,000/-</td>
+                                            <td>05 Jan 2024</td>
+                                            <td>Satish Kumar</td>
+                                            <td>01</td>
+                                          </tr>
+                                       
+                                      </tbody>
+                                    </table>
+        
+        
+                                  </div>
+                                </div>
+                            </div>
+    
+                          </div>
+                    </div>
+
+
+
+
+                    </div>
                     
                   </div>
 
 
-                <div class="pagi-div">
-                    <p>Showing 1 - 10 of 2050 records</p>
-                    <div class="next-page-div">
+                <div class="pagi-div list-pagi">
+                    <p class="records">Showing 1 - 10 of 2050 records</p>
+                    <div class="d-flex align-items-center">
+                      <div class="all-boxs">
+                        <span></span>
+                        <p>Booking Completed</p>
+                      </div>
+                      <div class="all-boxs">
+                        <span class="blue"></span>
+                        <p>Document Signed</p>
+                      </div>
+                      <div class="all-boxs">
+                        <span class="green"></span>
+                        <p>Vehicle Allotted</p>
+                      </div>
+                      <div class="all-boxs">
+                        <span class="light-yellow"></span>
+                        <p>Vehicle Invoiced</p>
+                      </div>
+                      <div class="all-boxs">
+                        <span class="red"></span>
+                        <p>Vehicle Delivered</p>
+                      </div>
+                      <div class="all-boxs">
+                        <span class="light-black"></span>
+                        <p>Vehicle Ready for Delivery</p>
+                      </div>
+                    </div>
+                    <div class="next-page-div list-next-pagi">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination">
                               <li class="page-item">
@@ -227,7 +1057,7 @@
                                     <span class="icon-pagi" aria-hidden="true"></span>
                                 </a>
                               </li>
-                              <li class="page-item">
+                              <li class="page-item me-0">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>10</option>
                                     <option value="1">200</option>

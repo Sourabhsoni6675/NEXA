@@ -1,4 +1,5 @@
 
+
 .btn-primary{
     background-color: $primary;
     color: $white;
@@ -817,7 +818,7 @@ header nav.sticky {
 }
 
 .booking-head{
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     align-items: center;
     p{
         margin-bottom: 0;
@@ -1008,9 +1009,18 @@ header nav.sticky {
 
 .same-table.request-table.bookin-list-table{
     .table{
+        white-space: nowrap;
+        thead{
+            tr{
+                th{
+                    padding-right: 40px ;
+                }
+            }
+        }
         tbody{
             tr{
                 th{
+                    
                     &:nth-child(1){
                         padding-left: 10px;
                     }
@@ -1044,23 +1054,173 @@ header nav.sticky {
         padding: 10px 25px;
         .four-btn{
             font-size: 14px;
+            .same-massage{
+                min-width: 150px;
+            }
+        }
+    }
+    .list-status-span{
+        background-color: #D176AC;
+        border-radius: 4px;
+        color: $white;
+        display: inline-block;
+        font-size: 12px;
+        padding: 0 5px;
+        &.blue{
+           background-color: #61A4E4; 
+        }
+        &.green{
+            background-color: #2D945A; 
+        }
+        &.light-yellow{
+            background-color: #FFA958; 
+        }
+        &.red{
+            background-color: #FF3703; 
+        }
+        &.light-black{
+            background-color: #5E6C84;
+        }
+    }
+}
+.pagi-div{
+    &.list-pagi{
+        .records{
+            font-size: 13px;
+        }
+        .all-boxs{
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            span{
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                margin-right: 6px;
+                border-radius: 4px;
+                background-color: #D176AC;
+                &.blue{
+                    background-color: #61A4E4; 
+                 }
+                 &.green{
+                     background-color: #2D945A; 
+                 }
+                 &.light-yellow{
+                     background-color: #FFA958; 
+                 }
+                 &.red{
+                     background-color: #FF3703; 
+                 }
+                 &.light-black{
+                     background-color: #5E6C84;
+                 }
+            }
+            p{
+                font-size: 12px;
+                color: #68758C;
+                margin-bottom: 0;
+            }
+        }
+        .list-next-pagi{
+            .pagination{
+                justify-content: end !important;
+            }
         }
     }
 }
 
-.filter-span{
+.main-filter-box{
     position: relative;
-    .filter-div{
+}
+.filter-div{
+    position: absolute;
+    right: 0;
+    top: 40px;
+    z-index: 99;
+    width: 350px;
+    display: none;
+    background-color: $white;
+    box-shadow: 0 3px 17px rgba($color: $primary, $alpha: 0.2);
+    &.show{
+        display: block;
+    }
+    .close-btn{
         position: absolute;
-        right: 0;
-        padding: 15px;
-        top: 40px;
-        width: 350px;
-        display: none;
-        background-color: $white;
-        box-shadow: 0 3px 17px rgba($color: $primary, $alpha: 0.2);
-        &.show{
-            display: block;
+        left: -38px;
+        top: 0;
+        background-color: $primary;
+        border-radius: 5px 0 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 38px;
+        height: 50px;
+        border: none;
+        span{
+           font-size: 14px; 
         }
-    }    
+    }
+    .top-head-filter{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        p{
+            font-size: 14px;
+
+        }
+        span{
+            color: #EE585A;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
+}
+.filter-accordion-main{
+    height: 350px;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+        width: 7px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+        background: $white;
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+        background: $primary;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+    }
+    .accordion{
+        .accordion-item{
+            border: none;
+            margin-bottom: 10px;
+            .accordion-header{
+                .accordion-button{
+                    border-radius: 0;
+                    background-color: #E4E6E7;
+                    color: $primary;
+                    &:focus{
+                        box-shadow: none;
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .accordion-body{
+            padding: 15px 20px 5px;
+            .select-zone{
+                border: none;
+                background-color: #F5F5F5;
+                border-radius: 4px;
+            }
+        }
+        
+    }
 }

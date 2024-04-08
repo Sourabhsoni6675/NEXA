@@ -31,8 +31,11 @@ $(document).ready(function () {
 
 
  $(document).ready(function(){
-     $("#filter").click(function(){
-       $(".filter-div").toggleClass("show");
-     });
-});
+   $("#filter").click(function(){
+       $(".filter-div").toggleClass("show"); // Toggle the class 'show' on the button itself
+   });
+   $(".close-btn").click(function(){
+      $(".filter-div").removeClass("show"); // Toggle the class 'show' on the button itself
+  });
+})
  
